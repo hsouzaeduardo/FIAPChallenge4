@@ -30,12 +30,12 @@ venv-py310\Scripts\activate
 # Para macOS/Linux:
 source venv-py310/bin/activate
 ```
-###2. Instale as dependências
+### 2. Instale as dependências
 ```bash
 pip install -r requirements.txt
 ```
 
-## 3. Execute o script principal
+### 3. Execute o script principal
 ```bash
 python main.py
 ```
