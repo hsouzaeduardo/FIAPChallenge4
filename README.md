@@ -39,3 +39,5 @@ pip install -r requirements.txt
 ```bash
 python main.py
 ```
+
+![alt text](image.png)

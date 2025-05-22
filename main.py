@@ -32,9 +32,9 @@ def classificar_atividade(landmarks):
     nose = landmarks[mp_pose.PoseLandmark.NOSE.value]
 
     if left_wrist.y < nose.y and right_wrist.y < nose.y:
-        return "braços levantados"
+        return "PRA CIMA"
     elif left_wrist.y > nose.y and right_wrist.y > nose.y:
-        return "braços abaixados"
+        return "PRA BAIXO"
     else:
         return "movimento indefinido"
 
@@ -85,7 +85,7 @@ while True:
 
     # Exibe a janela
     frame_count += 1
-    cv2.imshow("Detecção de Emoções e Atividades", frame)
+    cv2.imshow("Detect de emocao e Atividades", frame)
 
     if cv2.waitKey(1) & 0xFF == 27:
         break
